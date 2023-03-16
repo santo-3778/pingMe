@@ -1,0 +1,61 @@
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="heading text-center">
+            <h2>Contact
+                <span> Us </span></h2>
+            <p>Start typing a suggestion like “Register” or “Crush”
+                <br>or any bugs</p>
+        </div>
+        <div class="row">
+            <div class="col-md-5">
+                <div class="title">
+                    <h3>Contact detail</h3>
+                    <p>pingMe Software Technology Pvt.Ltd </p>
+                </div>
+                <div class="content">
+                    <!-- Info-1 -->
+                    <div class="info">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4 class="d-inline-block">PHONE :
+                            <br>
+                            <span>+919747136071 , +04692669779</span></h4>
+                    </div>
+                    <!-- Info-2 -->
+                    <div class="info">
+                        <i class="far fa-envelope"></i>
+                        <h4 class="d-inline-block">EMAIL :
+                            <br>
+                            <span>pingMe@yahoo.com</span></h4>
+                    </div>
+                    <!-- Info-3 -->
+                    <div class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4 class="d-inline-block">ADDRESS :<br>
+                            <span>Macfast Thiruvalla ,Kerala, India</span></h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-7">
+
+                <form>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" name="name" class="form-control" placeholder="Name" [(ngModel)]="name">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email"name="email" class="form-control" placeholder="Email" [(ngModel)]="email">
+                        </div>
+                        <div class="col-sm-12">
+                            <input type="text" class="form-control" name ="subject" placeholder="Subject" [(ngModel)]="subject">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="5" id="comment" name="message"placeholder="Message" [(ngModel)]="message"></textarea>
+                    </div>
+                    <button class="btn btn-block" type="submit" (click)="contact()">Send Now!</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

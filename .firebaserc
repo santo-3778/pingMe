@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "pingme-e2460": {
+      "hosting": {
+        "Pingme": [
+          "pingme-e2460"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "pingme-e2460"
+  }
+}

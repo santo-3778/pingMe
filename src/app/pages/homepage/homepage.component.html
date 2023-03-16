@@ -1,0 +1,48 @@
+<div style="height: 150px;"></div>
+
+<div class="slide animate" id="slide-02">
+  <div class="image-rotator">
+     <img src="../../../assets/image/main/slide1.jpg" alt="apple" >
+     <img src="../../../assets/image/main/slide2.jpg" alt="bananas" >
+     <img src="../../../assets/image/main/slide3.jpg" alt="cherries" >
+  </div>
+</div>
+
+  <div class="contact" id="search">
+    <div class="container">
+       <h1 class="myH2">Find the people you’ve crossed paths with </h1>
+      
+                  
+                    <div>
+                        <input type="text" name="search" class="form-control" placeholder="Search with Name " style="text-align: center;">
+                       
+                    </div>
+                    <div class="row">
+                      <input type="submit" value="Search" class="btn">
+                    </div>
+    </div>
+  </div>
+
+
+
+<div class="main">
+  <div class="cards">
+    <div class="cards_item" *ngFor="let i of userData |async">
+      <div class="card " >
+        <div class="card_image"><img src="" style="height: 200px;width: 15rem;"></div>
+        <div class="card_content">
+          <h2 class="card_title">{{i.name}}</h2>
+          <p class="card_text">{{i.email}}</p>
+          <button (click)="gotopage(i.id)"class="btn1 card_btn">View Profile</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  
+  
+  
